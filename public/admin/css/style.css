@@ -1,0 +1,88 @@
+#icon-ban {
+	color:#d73925;
+}
+#icon-check {
+	color:#008d4c;
+	font-style: 16px !important;
+}
+
+.text-height {
+    line-height: 100px !important;
+}
+
+.mg-top-20 {
+	margin-top: 20px;
+}
+.hidden{
+	display: none;
+}
+#gallery .gallery-input{
+	position: absolute;
+	width: 100%;
+	height: 90%;
+	opacity: 0;
+	z-index: 15;
+}
+#gallery img{
+	width: 100%;
+	z-index: 10;
+}
+#gallery .icon{
+	z-index: 2;
+	position: absolute;
+	margin-top: 35%;
+	left: 40%;
+	right: auto;
+	border: solid 1px #ccc;
+}
+
+.preview.showimg{
+	border: solid 1px #ccc;
+}
+.preview.showimg.prev{
+	height: 100px;
+	width: 100px;
+}
+.preview.showimg.prev img{
+	width: 100%;
+}
+.action, .caption{
+	z-index:1000;
+}
+.preview.showimg.main{
+	border:none !important;
+}
+.caption{
+	display: block;
+	width: 100%;
+}
+.box-tools.pull-right
+{
+	display: none;
+}
+.title{
+	text-align: center;
+}
+.feedback{
+	width: 230px;
+}
+.feedback img{
+	max-width: 230px;
+	height: auto;
+}
+ul.lang li{
+	list-style: none;
+	display: inline-block;
+	border: #ccc solid 1px;
+	padding: 5px;
+}
+
+ul.lang li.active{
+	background-color: #3c8dbc;
+}
+ul.lang{
+	text-align: right;
+}
+ul.lang li.active a{
+	color: white;
+}
