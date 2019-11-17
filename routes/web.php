@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('trangchu');
+});
+
+
+Route::get('/gioithieu', function () {
+    return view('intro');
 });
