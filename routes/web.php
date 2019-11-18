@@ -12,12 +12,13 @@
 */
 
 
-
     Route::group([
         'prefix' => 'admin',
         'namespace' => 'Admin',
         'as' =>'admin'
     ], function () {
+
+        
 
         Route::get('login', ['as' => 'login', 'uses' => 'AuthController@getLogin'])->name('login');
         Route::post('postLogin', ['as' => 'postLogin', 'uses' => 'AuthController@postLogin'])->name('postLogin');
@@ -110,6 +111,13 @@
         ->where(['slug'=>'[a-zA-Z0-9-_]+','id'=>'[0-9]+']);
     Route::post('add-product', ['as'=>'add-product', 'uses'=>'ProductsController@addOrder'])->name('add-product');
     Route::get('homepage-manga', ['as'=>'homepage-manga', 'uses'=>'HomeController@manga'])->name('homepage-manga');
+    Route::get('/', function () {
+        return view('homepage');
+    });
+    
+    Route::get('/intro', function () {
+        return view('intro');
+    });
 });
 
 
