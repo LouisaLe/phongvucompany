@@ -19,6 +19,10 @@ Route::get('/intro', function () {
     return view('intro');
 });
 
+Route::get('/contact', function () {
+    return view('contact');
+});
+
 Route::group([
     'prefix' => 'admin',
     'namespace' => 'Admin',
