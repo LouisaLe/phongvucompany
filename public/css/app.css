@@ -8793,7 +8793,7 @@ a.text-dark:hover {
 
 html,
 body {
-    background-color: #ffffff;
+    /* background-color: rgb(255, 230, 230); */
 }
 
 ul,
@@ -8803,23 +8803,60 @@ li {
     margin: 0;
 }
 
+p {
+    margin: 0;
+}
+
+.nav-bar__container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .nav-bar__wrapper {
     display: flex;
-    background-image: linear-gradient(to right, #660000, #cc0000);
+    justify-content: center;
+    /* background-image: linear-gradient(to right, #660000, #cc0000); */
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 .nav-bar__item {
     padding: 10px 15px;
+    cursor: pointer;
+}
+
+.nav-bar__item a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-bar__item a:hover {
+    font-weight: 700;
 }
 
 .logo {
-    display: block;
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
     padding: 15px 0;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(235, 230, 235, 1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(235, 230, 235, 1);
+    box-shadow: 0px 0px 5px 0px rgba(235, 230, 235, 1);
+}
+
+.logo img {
+    width: 100px;
+}
+
+.slogan {
+    padding-top: 16px;
+    line-height: 1;
+    font-size: 16px;
+}
+
+.logo-scrolled img {
+    margin: 15px;
+    height: 50px;
 }
 
 
@@ -8829,7 +8866,7 @@ li {
     display: flex !important;
     align-items: stretch;
     justify-content: center;
-    max-height: 500px;
+    max-height: 650px;
 }
 
 .slick-slide {
@@ -8859,14 +8896,163 @@ li {
     right: 50px;
 }
 
+.slick-slider__img {
+    max-width: 100%;
+    margin: 0 auto;
+}
 
-/* .slick-arrow:before {
-    content: "";
-    background-color: #cccccc;
+.header__wrapper {
+    /* display: flex; */
+    position: relative;
+    height: 80px;
+    padding: 0 50px;
+    background-image: linear-gradient(to right, #660000, #cc0000);
+}
+
+.logo {
     position: absolute;
-    top: -4px;
-    left: -6px;
-    width: 40px;
-    height: 40px;
-    z-index: -1;
-} */
+    background-color: #ffffff;
+    width: 140px;
+    height: 140px;
+    top: -10px;
+    z-index: 1;
+}
+
+.top-menu {
+    height: 30px;
+    /* background-color: #cccccc; */
+    text-align: right;
+    padding-right: 25px;
+    padding-top: 5px;
+}
+
+.content__container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* contact page */
+
+.contact__wrapper {
+    margin-top: 80px;
+    padding: 25px 40px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(235, 230, 235, 1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(235, 230, 235, 1);
+    box-shadow: 0px 0px 5px 0px rgba(235, 230, 235, 1);
+}
+
+.contact__title {
+    font-size: 16px;
+}
+
+.page__label {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: #b30000;
+}
+
+.list__ico-label li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+}
+
+.icon {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.icon img {
+    width: 24px;
+}
+
+.title {
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 16px 0;
+    font-weight: 700;
+}
+
+.address .title {
+    text-align: center;
+}
+
+.map__wrapper iframe {
+    width: 100%;
+}
+
+.contact__title {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.contact__input {
+    width: 100%;
+    margin: 12px 0;
+    padding: 8px;
+}
+
+.contact__submit {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    width: 100px;
+    background-color: #2952a3;
+    color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.information__wrapper {
+    margin-bottom: 25px;
+}
+
+.flex-2-col {
+    display: flex;
+}
+
+.contact-form,
+.map__wrapper {
+    width: 50%;
+}
+
+.contact-form {
+    max-width: 500px;
+    padding-right: 25px;
+}
+
+
+/* Footer */
+
+.footer__content {
+    display: flex;
+    border-top: 1.2px solid #cccccc;
+    padding-bottom: 16px;
+}
+
+.footer__item {
+    margin-right: 40px;
+}
+
+.footer__item a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.copy-right {
+    background-image: linear-gradient(to right, #660000, #cc0000);
+    color: #ffffff;
+    height: 50px;
+    padding: 14px 0;
+    text-align: center;
+}
+
+.icon-copyright {
+    margin-right: 20px;
+}

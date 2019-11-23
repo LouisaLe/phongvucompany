@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Phong Vu Fashion</title>
+        <title>Phong Vu - Fashion for all</title>
+        <link rel="shortcut icon" href="images/favicon.png">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -16,14 +17,38 @@
         <!-- Styles -->
     </head>
     <body>
-        <div class="logo">
-            <a href="#">
-                <img src="images/logo.png" alt="Phong Vu Company - Fashion for all">
-            </a>
+        <!-- <div class="top-menu">
+            Hotline: 0904 379 309
+        </div> -->
+
+        <div class="header__wrapper">
+        
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo-phong-vu.png" alt="Phong Vu Company - Fashion for all">
+                </a>
+                <p class="slogan">Fashion for all</p>
+            </div>
+
+            @include('common.menu')        
         </div>
+        
     
-        @include('common.menu')
-        @include('common.banner-slider')
+
+        <!-- main content -->
+        <div class="main__wrapper">
+            @include('common.banner-slider')
+            <div class="content__container">
+                <div class="label__list">
+                    Sản phẩm nổi bật
+                </div>
+
+                <div class="list--detail__wrapper">
+                    
+                </div>
+            </div>
+            
+        </div>
 
         @include('common.footer')        
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
