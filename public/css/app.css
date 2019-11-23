@@ -8914,7 +8914,7 @@ p {
     background-color: #ffffff;
     width: 140px;
     height: 140px;
-    top: -10px;
+    top: 0;
     z-index: 1;
 }
 
@@ -8929,6 +8929,15 @@ p {
 .content__container {
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.label__list {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
 }
 
 
@@ -9013,8 +9022,17 @@ p {
     margin-bottom: 25px;
 }
 
-.flex-2-col {
+.flex-block {
     display: flex;
+}
+
+.flex-block .list__item--two {
+    padding: 8px;
+    width: 50%;
+}
+
+.flex-block .list__item--two img {
+    width: 100%;
 }
 
 .contact-form,

@@ -32,19 +32,39 @@
 
             @include('common.menu')        
         </div>
-        
-    
 
         <!-- main content -->
         <div class="main__wrapper">
             @include('common.banner-slider')
             <div class="content__container">
                 <div class="label__list">
-                    Sản phẩm nổi bật
+                    Sản phẩm
                 </div>
 
-                <div class="list--detail__wrapper">
-                    
+                <div class="flex-block">
+                    <div class="list__item--two">
+                        <a href="#">
+                            <img src="images/cap-01.png" alt="Phong Vu Company - Fashion for all">
+                        </a>
+                    </div>
+                    <div class="list__item--two">
+                        <a href="#">
+                            <img src="images/cap-02.png" alt="Phong Vu Company - Fashion for all">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex-block">
+                    <div class="list__item--two">
+                        <a href="#">
+                            <img src="images/cap-03.png" alt="Phong Vu Company - Fashion for all">
+                        </a>
+                    </div>
+                    <div class="list__item--two">
+                        <a href="#">
+                            <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">
+                        </a>
+                    </div>
                 </div>
             </div>
             

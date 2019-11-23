@@ -67,7 +67,7 @@
                </li>
             </ul>
         </div>
-        <div class="flex-2-col">
+        <div class="flex-block">
             <div class="contact-form">
                 <p class="contact__title">
                     Mọi thắc mắc và yêu cầu cần hỗ trợ, vui lòng để lại thông tin tại đây. Chúng tôi sẽ xem xét và gửi phản hồi sớm nhất.
