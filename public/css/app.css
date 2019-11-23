@@ -9063,6 +9063,12 @@ p {
     margin-right: 15px;
 }
 
+.footer__item .logo {
+    position: initial;
+    background-color: initial;
+    box-shadow: initial;
+}
+
 .copy-right {
     background-image: linear-gradient(to right, #660000, #cc0000);
     color: #ffffff;

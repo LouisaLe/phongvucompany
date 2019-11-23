@@ -2,6 +2,14 @@
     <div class="content__container">
         <div class="footer__content">
             <div class="footer__item">
+                <div class="logo">
+                    <a href="{{url('/')}}">
+                        <img src="images/logo-phong-vu.png" alt="Phong Vu Company - Fashion for all">
+                    </a>
+                    <p class="slogan">Fashion for all</p>
+                </div>
+            </div>
+            <div class="footer__item">
                 <p class="title">Kết nối với chúng tôi</p>
                 <span>
                     <a href="https://www.facebook.com/" target="_blank">
