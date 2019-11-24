@@ -22,7 +22,6 @@
         </div> -->
 
         <div class="header__wrapper">
-        
             <div class="logo">
                 <a href="#">
                     <img src="images/logo-phong-vu.png" alt="Phong Vu Company - Fashion for all">
@@ -43,26 +42,42 @@
 
                 <div class="flex-block">
                     <div class="list__item--two">
-                        <a href="#">
+                        <a class="list__item" href="{{url('product')}}">
                             <img src="images/cap-01.png" alt="Phong Vu Company - Fashion for all">
+                            <div class="label-on-card">                                
+                                <span>Nón Lưỡi Chai</span>
+                                <span class="text--hover">Tìm hiểu thêm</span>                                
+                            </div>
                         </a>
                     </div>
                     <div class="list__item--two">
-                        <a href="#">
+                        <a class="list__item" href="{{url('product')}}">
                             <img src="images/cap-02.png" alt="Phong Vu Company - Fashion for all">
+                            <div class="label-on-card">
+                                <span>Mũ Nồi</span>
+                                <span class="text--hover">Tìm hiểu thêm</span>   
+                            </div>
                         </a>
                     </div>
                 </div>
 
                 <div class="flex-block">
                     <div class="list__item--two">
-                        <a href="#">
-                            <img src="images/cap-03.png" alt="Phong Vu Company - Fashion for all">
+                        <a class="list__item" href="{{url('product')}}">
+                            <img src="images/cap-03.png" alt="Phong Vu Company">
+                            <div class="label-on-card">
+                                <span>Nón Len</span>
+                                <span class="text--hover">Tìm hiểu thêm</span>
+                            </div>
                         </a>
                     </div>
                     <div class="list__item--two">
-                        <a href="#">
-                            <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">
+                        <a class="list__item" href="{{url('product')}}">
+                            <img src="images/cap-04.png" alt="Phong Vu Company">
+                            <div class="label-on-card">
+                                <span>Nón Vành Rộng</span>
+                                <span class="text--hover">Tìm hiểu thêm</span>
+                            </div>
                         </a>
                     </div>
                 </div>

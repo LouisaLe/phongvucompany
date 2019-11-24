@@ -91,6 +91,9 @@
         
     </div>
 </div>
+
+@include('common.footer')
+
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHqvk9n1UMCme4tmMCtTzz_0VUuO2Br5Y&callback=initMap">
 </script>
 

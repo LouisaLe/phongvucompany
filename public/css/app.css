@@ -8943,7 +8943,8 @@ p {
 
 /* contact page */
 
-.contact__wrapper {
+.contact__wrapper,
+.intro__wrapper {
     margin-top: 80px;
     padding: 25px 40px;
     background-color: #ffffff;
@@ -9033,11 +9034,49 @@ p {
 
 .flex-block .list__item--two img {
     width: 100%;
+    transition: transform 1s linear;
+}
+
+.flex-block .list__item--two:hover img {
+    transform: scale(1.3);
+}
+
+.list__item {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
 }
 
 .contact-form,
 .map__wrapper {
     width: 50%;
+}
+
+.label-on-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #ffffff;
+    font-size: 20px;
+    color: #ffffff;
+    width: 60%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgb(242, 242, 242, 0.5);
+    text-transform: uppercase;
+}
+
+.label-on-card .text--hover {
+    display: none;
+}
+
+.label-on-card:hover span {
+    display: none;
+}
+
+.label-on-card:hover span.text--hover {
+    display: block;
 }
 
 .contact-form {
@@ -9051,7 +9090,7 @@ p {
 .footer__content {
     display: flex;
     border-top: 1.2px solid #cccccc;
-    padding-bottom: 16px;
+    padding: 6px 0 16px 0;
 }
 
 .footer__item {
@@ -9079,4 +9118,55 @@ p {
 
 .icon-copyright {
     margin-right: 20px;
+}
+
+
+/* End footer style */
+
+
+/* Start style for Intro page */
+
+.img__banner {
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.page__detail {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.intro__wrapper .page__label {
+    padding: 10px 0;
+}
+
+.intro__list {
+    display: flex;
+}
+
+.intro-item__wrapper {
+    width: 33.33%;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.intro__icon {
+    margin-right: 30px;
+}
+
+.intro__icon img {
+    width: 100px;
+}
+
+.intro__icon p {
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.intro__detail {
+    margin-top: 12px;
+    padding: 0 25px;
 }
