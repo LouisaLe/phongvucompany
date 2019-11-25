@@ -57,7 +57,7 @@ class AboutsController extends Controller
             $dataAbouts ->title       = $request->title;
             $dataAbouts ->content     = $request->content;
             $dataAbouts ->save();
-            $dataAbouts->saveDataByLang();
+            //$dataAbouts->saveDataByLang();
 
             return redirect('admin/abouts/getEdit')->with("success","updated");
 
@@ -77,7 +77,7 @@ class AboutsController extends Controller
         }
 
         try {
-            $abouts->deleteLang();
+            //$abouts->deleteLang();
             $abouts ->delete();
             return redirect('admin/abouts/list')->with('success','Xóa thành công bài viết.');
         } catch (Exception $e) {
