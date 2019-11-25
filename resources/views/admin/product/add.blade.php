@@ -104,7 +104,7 @@
                                     </div>
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                         <div class="col-md-3 col-sm-6 col-xs-12 ">
-                                            <label for="exampleInputEmail1">Mô tả</label>
+                                            <label for="exampleInputEmail1">Tóm Tắt</label>
                                         </div>
                                         <div class="col-md-6 col-sm-6 col-xs-12 ">
                                             <textarea id="summary" name="summary" rows="10" cols="80">{{ old('summary')}}</textarea>
@@ -112,7 +112,7 @@
                                     </div>
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                         <div class="col-md-3 col-sm-6 col-xs-12 ">
-                                            <label for="exampleInputEmail1">Đóng gói & Vận chuyển</label>
+                                            <label for="exampleInputEmail1">Mô Tả</label>
                                         </div>
                                         <div class="col-md-6 col-sm-6 col-xs-12 ">
                                             <textarea id="short_description" name="short_description" rows="10" cols="80">{{ old('short_description')}}</textarea>
@@ -121,7 +121,7 @@
                                     </div>
                                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
                                         <div class="col-md-3 col-sm-6 col-xs-12 ">
-                                            <label for="exampleInputEmail1">Bảo hành & Đổi trả<span class="obligatory"></span></label>
+                                            <label for="exampleInputEmail1">Chi Tiết<span class="obligatory"></span></label>
                                         </div>
                                         <div class="col-md-6 col-sm-6 col-xs-12 ">
                                             <textarea id="description" name="description" rows="10" cols="80">{{ old('description')}}</textarea>

@@ -72,7 +72,7 @@ class ProductsController extends Controller
             $products->meta_description  =  $request->meta_description;
 
 			$products->save();
-            $products->saveDataByLang();
+            //$products->saveDataByLang();
 
 			return redirect('admin/products/getEdit/'.$products->id)->with('success', 'Thêm thành công sản phẩm');
     	} catch (Exception $e) {
@@ -85,7 +85,7 @@ class ProductsController extends Controller
 
     	$dataProducts = Products::find($id);
     	if($dataProducts) {
-            $dataProducts->setLangAttribute();
+            //$dataProducts->setLangAttribute();
     		return view('admin.product.edit', compact('dataProducts'));
 
     	} else {
@@ -151,7 +151,7 @@ class ProductsController extends Controller
             $products->keywords          =  $request->keywords;
             $products->meta_description  =  $request->meta_description;
             $products->save();
-            $products->saveDataByLang();
+            //$products->saveDataByLang();
 
 			return redirect('admin/products/list')->with('success', 'Chỉnh sửa thành công sản phẩm');
     	} catch (Exception $e) {
@@ -170,17 +170,17 @@ class ProductsController extends Controller
     	}
 
     	try {
-    	    if($products->deleteLang()){
-                $products ->delete();
-                $images = json_decode($products->image, true);
-                if($images){
-                    foreach ($images as $image){
-                        File::delete(Products::FOLDER_UPLOAD.'/'.$image['name']);
-                    }
-
+    	   
+            $products ->delete();
+            $images = json_decode($products->image, true);
+            if($images){
+                foreach ($images as $image){
+                    File::delete(Products::FOLDER_UPLOAD.'/'.$image['name']);
                 }
-                return redirect('admin/products/list')->with('success','Xóa thành công slide.');
+
             }
+            return redirect('admin/products/list')->with('success','Xóa thành công slide.');
+
     	} catch (Exception $e) {
     		return redirect('admin/products/list')->with('error','Lỗi không thể xóa sản phẩm');
     	}

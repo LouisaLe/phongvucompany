@@ -55,45 +55,18 @@
                 </div>
 
                 <div class="flex-block">
+                    @foreach($products as $product)
                     <div class="list__item--two">
-                        <a class="list__item" href="{{url('product')}}">
-                            <img src="images/cap-01.png" alt="Phong Vu Company - Fashion for all">
+                        <a class="list__item" href="{{url('product',$product->id)}}">
+                            <?php $image = getThumnailProduct($product->image); ?>
+                            <img src="{{url($product->getPathImage($image['name']))}}" alt="{{$product->name}}">
                             <div class="label-on-card">                                
-                                <span>Nón Lưỡi Chai</span>
+                                <span>{{$product->name}}</span>
                                 <span class="text--hover">Tìm hiểu thêm</span>                                
                             </div>
                         </a>
                     </div>
-                    <div class="list__item--two">
-                        <a class="list__item" href="{{url('product')}}">
-                            <img src="images/cap-02.png" alt="Phong Vu Company - Fashion for all">
-                            <div class="label-on-card">
-                                <span>Mũ Nồi</span>
-                                <span class="text--hover">Tìm hiểu thêm</span>   
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="flex-block">
-                    <div class="list__item--two">
-                        <a class="list__item" href="{{url('product')}}">
-                            <img src="images/cap-03.png" alt="Phong Vu Company">
-                            <div class="label-on-card">
-                                <span>Nón Len</span>
-                                <span class="text--hover">Tìm hiểu thêm</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="list__item--two">
-                        <a class="list__item" href="{{url('product')}}">
-                            <img src="images/cap-04.png" alt="Phong Vu Company">
-                            <div class="label-on-card">
-                                <span>Nón Vành Rộng</span>
-                                <span class="text--hover">Tìm hiểu thêm</span>
-                            </div>
-                        </a>
-                    </div>
+                    @endforeach
                 </div>
             </div>
             

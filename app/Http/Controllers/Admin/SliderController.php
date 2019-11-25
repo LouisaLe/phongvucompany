@@ -33,10 +33,10 @@ class SliderController extends  Controller{
     public function delete($id){
         $slider = Slider::find($id);
         try{
-            if($slider->deleteLang()){
-                $slider->delete();
-                return redirect('admin/slider/list')->with('success', 'Đã Xóa!');
-            }
+
+            $slider->delete();
+            return redirect('admin/slider/list')->with('success', 'Đã Xóa!');
+
 
         }catch (\Exception $e){
             return redirect('admin/slider/list')->with('error',$e->getMessage());
@@ -80,7 +80,7 @@ class SliderController extends  Controller{
             $slider->group = $request->group;
             try{
                 $slider->save();
-                $slider->saveDataByLang();
+                //$slider->saveDataByLang();
                 return redirect('admin/slider/edit/'.$slider->id)->with('success', 'Lưu thành công!');
             } catch (\Exception $e){
                 if($slider->id){

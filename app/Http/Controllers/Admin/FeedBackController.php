@@ -34,7 +34,7 @@ class FeedBackController extends  Controller{
     public function delete($id){
         $feedBack = FeedBack::find($id);
         try{
-            $feedBack->deleteLang();
+            //$feedBack->deleteLang();
             $feedBack->delete();
         }catch (\Exception $e){
             return redirect('admin/feed-back/list')->with('error', 'Lỗi không thể xóa!');
@@ -45,7 +45,7 @@ class FeedBackController extends  Controller{
     public function edit($id){
         $feedBack = FeedBack::find($id);
         if($feedBack){
-            $feedBack->setLangAttribute();
+            //$feedBack->setLangAttribute();
             return view('admin.feed-back.form', compact('feedBack'));
         } else {
             return redirect('admin/feed-back/list')->with('error', 'Không tồn tại!');
@@ -76,7 +76,7 @@ class FeedBackController extends  Controller{
             $feedBack->feed_back = $request->feed_back;
             try{
                 $feedBack->save();
-                $feedBack->saveDataByLang();
+                //$feedBack->saveDataByLang();
                 return redirect('admin/feed-back/edit/'.$feedBack->id)->with('success', 'Lưu thành công!');
             } catch (\Exception $e){
                 return redirect('admin/feed-back/new')->with('error', $e->getMessage());
