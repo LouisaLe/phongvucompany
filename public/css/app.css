@@ -9025,6 +9025,7 @@ p {
 
 .flex-block {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .flex-block .list__item--two {
