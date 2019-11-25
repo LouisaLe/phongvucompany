@@ -21,6 +21,17 @@
             Hotline: 0904 379 309
         </div> -->
 
+        <script>
+        function initMap() {
+            var uluru = { lat: -25.344, lng: 131.036 };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), { zoom: 4, center: uluru });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({ position: uluru, map: map });
+        }
+        </script>
+
         <div class="header__wrapper">
             <div class="logo">
                 <a href="#">
@@ -31,12 +42,15 @@
 
             @include('common.menu')        
         </div>
-
+        
         <!-- main content -->
         <div class="main__wrapper">
-            @include('common.banner-slider')
+            <div class="getting-page__wrapper">
+            <div class="arrow bounce"></div>
+            @include('common.banner-slider')            
+            </div>
             <div class="content__container">
-                <div class="label__list">
+                <div id="listProducts" class="label__list">
                     Sản phẩm
                 </div>
 
@@ -86,6 +100,8 @@
         </div>
 
         @include('common.footer')        
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHqvk9n1UMCme4tmMCtTzz_0VUuO2Br5Y&callback=initMap">
+        </script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
         <script src="access/slick.min.js"></script>

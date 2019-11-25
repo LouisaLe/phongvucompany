@@ -76,8 +76,6 @@
                         </div>
                     </div>
                 </div>
-
-                
             </div>
         </div>
         @include('common.footer')

@@ -36,3 +36,7 @@
         <span>Bản quyền thuộc về Công ty SX - TM thời trang Phong Vũ</span>
     </div>
 </div>
+
+<div id="scrollTop" class="button__scroll-top">
+    <img src="images/arrow-top.png" alt="Go to top">
+</div>
