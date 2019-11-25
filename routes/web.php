@@ -11,17 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('homepage');
-});
+Route::get('/', ['as'=>'home', 'uses'=>'HomeController@index'])->name('home');
 
 Route::get('/intro', function () {
     return view('intro');
 });
 
-Route::get('/product', function () {
-    return view('product');
-});
+Route::get('/product/{id}',['as'=>'product', 'uses'=>'ProductDetailController@index'])->name('product');
 
 Route::get('/contact', function () {
     return view('contact');

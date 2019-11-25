@@ -31,7 +31,6 @@
                             <tbody id="tbody-wallets">
                                 <?php  $stt = 0 ;?>
                                 @foreach($dataProducts as $val)
-                                   <?php $val->setLangAttribute(); ?>
                                     <tr class="row_{{ $val->id }} select" >
                                         <td class="text-center text-height"> {{ $stt = $stt +1 }}</td>
                                         <td class="text-center">

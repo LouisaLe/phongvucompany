@@ -33,37 +33,23 @@ class Products extends Model
         'meta_description'
     ];
 
-    public function getContentByLang($attribute)
-    {
-        $content = TranslationProduct::select("content")
-            ->where("product_id", "=", $this->id)
-            ->where("attribute", "=", $attribute)
-            ->where("lang", "=", App::getLocale())
-            ->get();
-        return $content ? $content->content : null;
-    }
-    public function saveDataByLang(){
-        foreach ($this->attributeMultiplang as $value ){
-            $translate = TranslationProduct::updateOrCreate(
-                ['product_id' => $this->id, 'attribute' => $value,"lang"=>App::getLocale()],
-                ['content' => $this->$value]
-            );
-            $translate->save();
-        }
+    /**
+     * @return mixed
+     */
+    public function getProducts(){
+        return self::all();
     }
 
-    public function setLangAttribute(){
-        $data = TranslationProduct::where("product_id", "=", $this->id)
-            ->where("lang", "=", App::getLocale())
-            ->get();
-        foreach ($data as $value){
-            $tmp = $value->attribute;
-            $this->$tmp = $value->content;
-        }
+    /**
+     * @param $id
+     * @return mixed
+     */
+    public function getProductById($id){
+        return self::findOrfail($id);
     }
 
-    public function deleteLang(){
-        return TranslationProduct::where('product_id', $this->id)->delete();
-
+    public function getPathImage($nameImage){
+        return self::FOLDER_UPLOAD . "/".$nameImage;
     }
+
 }
