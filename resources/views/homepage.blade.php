@@ -37,9 +37,8 @@
                 <a href="#">
                     <img src="images/logo-phong-vu.png" alt="Phong Vu Company - Fashion for all">
                 </a>
-                <p class="slogan">Fashion for all</p>
             </div>
-
+            <p class="slogan">Fashion for all</p>
             @include('common.menu')        
         </div>
         
@@ -54,7 +53,7 @@
                     Sản phẩm
                 </div>
 
-                <div class="flex-block">
+                <div id="productSlider" class="flex-block">
                     @foreach($products as $product)
                     <div class="list__item--two">
                         <a class="list__item" href="{{url('product',$product->id)}}">
@@ -67,6 +66,74 @@
                         </a>
                     </div>
                     @endforeach
+                </div>
+
+                <div class="label__list">
+                    Tin tức, sự kiện
+                </div>
+                <div id="newsList" class="news-list__wrapper">
+                    <div class="news-item__wrapper">
+                        <div class="news-item__image">
+                            <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
+                        </div>
+                        <div class="news-item__cotent">
+                            <div class="news-item__title">
+                                Cách chọn mũ vành rộng duyên dáng và xinh đẹp
+                            </div>
+                            <div class="news-item__date">
+                                Ngày: 20-10-2019
+                            </div>
+                            <div class="news-item__desc">
+                                Những chiếc mũ rộng vành này là “vũ khí” bảo vệ cho cả mái tóc, làn da và là 1 món thời trang khơi gợi nét duyên dáng, yêu kiều của bạn. Ngoài kiểu mũ rộng vành dành cho mùa hè & biển năm nay, Chất liệu sử dụng phổ biến nhất cho các kiểu NÓN mùa hè đặc điểm nhẹ, thông thoáng. Bên cạnh đó, các loại vải mềm, thoáng cũng mang đến cảm giác thoải mái, chẳng những che chắn nắng nóng mà còn hoàn thiện cho phong cách hè của bạn.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item__wrapper">
+                        <div class="news-item__image">
+                            <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
+                        </div>
+                        <div class="news-item__cotent">
+                            <div class="news-item__title">
+                                Cách chọn mũ vành rộng duyên dáng và xinh đẹp
+                            </div>
+                            <div class="news-item__date">
+                                Ngày: 20-10-2019
+                            </div>
+                            <div class="news-item__desc">
+                                Những chiếc mũ rộng vành này là “vũ khí” bảo vệ cho cả mái tóc, làn da và là 1 món thời trang khơi gợi nét duyên dáng, yêu kiều của bạn. Ngoài kiểu mũ rộng vành dành cho mùa hè & biển năm nay, Chất liệu sử dụng phổ biến nhất cho các kiểu NÓN mùa hè đặc điểm nhẹ, thông thoáng. Bên cạnh đó, các loại vải mềm, thoáng cũng mang đến cảm giác thoải mái, chẳng những che chắn nắng nóng mà còn hoàn thiện cho phong cách hè của bạn.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item__wrapper">
+                        <div class="news-item__image">
+                            <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
+                        </div>
+                        <div class="news-item__cotent">
+                            <div class="news-item__title">
+                                Cách chọn mũ vành rộng duyên dáng và xinh đẹp
+                            </div>
+                            <div class="news-item__date">
+                                Ngày: 20-10-2019
+                            </div>
+                            <div class="news-item__desc">
+                                Những chiếc mũ rộng vành này là “vũ khí” bảo vệ cho cả mái tóc, làn da và là 1 món thời trang khơi gợi nét duyên dáng, yêu kiều của bạn. Ngoài kiểu mũ rộng vành dành cho mùa hè & biển năm nay, Chất liệu sử dụng phổ biến nhất cho các kiểu NÓN mùa hè đặc điểm nhẹ, thông thoáng. Bên cạnh đó, các loại vải mềm, thoáng cũng mang đến cảm giác thoải mái, chẳng những che chắn nắng nóng mà còn hoàn thiện cho phong cách hè của bạn.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="label__list">
+                    Video
+                </div>
+                <div id="videosList" class="videos-list__wrapper">
+                    <div class="main-video__wrapper">
+                    <object data="https://www.youtube.com/embed/tgbNymZ7vqY"></object>
+                    </div>
+                    <div class="sub-videos__wrapper">
+                        <div class="label__list">
+                            Video
+                        </div>
+                    </div>
                 </div>
             </div>
             
