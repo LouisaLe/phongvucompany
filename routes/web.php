@@ -23,6 +23,14 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/policy', function () {
+    return view('policy');
+});
+
+Route::get('/products', function () {
+    return view('products');
+});
+
 Route::group([
     'prefix' => 'admin',
     'namespace' => 'Admin',

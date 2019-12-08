@@ -37,6 +37,6 @@
     </div>
 </div>
 
-<div id="scrollTop" class="button__scroll-top">
+<div id="scrollTop" class="button__scroll-top hidden">
     <img src="images/arrow-top.png" alt="Go to top">
 </div>

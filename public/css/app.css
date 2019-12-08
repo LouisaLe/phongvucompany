@@ -8794,7 +8794,9 @@ a.text-dark:hover {
 html,
 body {
     /* background-color: #a6a6a6; */
-    font-family: "Times New Roman", Times, serif;
+    /* font-family: "Times New Roman", Times, serif;
+     */
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     /* background-image: url('../images/bg-01.png'); */
     background-image: url('../images/bg-01.jpg');
@@ -8871,6 +8873,7 @@ p {
     line-height: 1;
     font-size: 16px;
     text-align: center;
+    font-style: italic;
 }
 
 .logo-scrolled img {
@@ -8948,7 +8951,17 @@ p {
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 8px;
+    margin-bottom: 30px;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.news-list__wrapper {
+    padding-top: 5px;
 }
 
 .news-item__wrapper {
@@ -8986,10 +8999,13 @@ p {
 /* contact page */
 
 .contact__wrapper,
-.intro__wrapper {
+.intro__wrapper,
+.policy__wrapper {
     margin-top: 80px;
+    margin-bottom: 60px;
     padding: 25px 40px;
     background-color: #ffffff;
+    color: #000000;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(235, 230, 235, 1);
     -moz-box-shadow: 0px 0px 5px 0px rgba(235, 230, 235, 1);
     box-shadow: 0px 0px 5px 0px rgba(235, 230, 235, 1);
@@ -9072,7 +9088,7 @@ p {
 
 .flex-block .list__item--two {
     padding: 8px;
-    width: 50%;
+    width: 33.33% !important;
 }
 
 .flex-block .list__item--two img {
@@ -9101,11 +9117,11 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     border: 2px solid #ffffff;
-    font-size: 20px;
+    font-size: 16px;
     color: #ffffff;
-    width: 60%;
+    width: 80%;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     background-color: rgb(242, 242, 242, 0.5);
     text-transform: uppercase;
 }
@@ -9114,11 +9130,11 @@ p {
     display: none;
 }
 
-.label-on-card:hover span {
+.label-on-card:hover .text-shown {
     display: none;
 }
 
-.label-on-card:hover span.text--hover {
+.label-on-card:hover .text--hover {
     display: block;
 }
 
@@ -9130,10 +9146,18 @@ p {
 
 /* Footer */
 
+.footer__wrapper .content__container {
+    width: 100%;
+    background-color: #ffffff;
+    color: #d31820;
+    margin-bottom: 0;
+}
+
 .footer__content {
     display: flex;
+    justify-content: center;
     border-top: 1.2px solid #cccccc;
-    padding: 6px 0 16px 0;
+    padding: 20px;
 }
 
 .footer__item {
@@ -9261,7 +9285,7 @@ p {
 }
 
 .videos-list__wrapper {
-    display: flex;
+    padding-top: 5px;
 }
 
 
@@ -9275,6 +9299,43 @@ p {
 .image__banner {
     margin: 0 auto;
     text-align: center;
+}
+
+.main-video__wrapper iframe {
+    width: 100%;
+    min-width: 400px;
+    min-height: 500px;
+}
+
+.prepare-videos__list {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+
+.video__item {
+    margin-right: 20px;
+}
+
+.sub-videos__wrapper {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.coperations {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cop__item {
+    width: 20%;
+    padding: 10px;
+}
+
+.cop__item img {
+    width: 100%;
 }
 
 

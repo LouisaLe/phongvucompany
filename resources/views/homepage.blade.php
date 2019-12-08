@@ -60,8 +60,9 @@
                             <?php $image = getThumnailProduct($product->image); ?>
                             <img src="{{url($product->getPathImage($image['name']))}}" alt="{{$product->name}}">
                             <div class="label-on-card">                                
-                                <span>{{$product->name}}</span>
-                                <span class="text--hover">Tìm hiểu thêm</span>                                
+                                <p class="text-shown">{{$product->name}}</p>
+                                <p class="text-shown">Test Number</p>
+                                <p class="text--hover">Tìm hiểu thêm</p>                                
                             </div>
                         </a>
                     </div>
@@ -84,7 +85,7 @@
                                 Ngày: 20-10-2019
                             </div>
                             <div class="news-item__desc">
-                                Những chiếc mũ rộng vành này là “vũ khí” bảo vệ cho cả mái tóc, làn da và là 1 món thời trang khơi gợi nét duyên dáng, yêu kiều của bạn. Ngoài kiểu mũ rộng vành dành cho mùa hè & biển năm nay, Chất liệu sử dụng phổ biến nhất cho các kiểu NÓN mùa hè đặc điểm nhẹ, thông thoáng. Bên cạnh đó, các loại vải mềm, thoáng cũng mang đến cảm giác thoải mái, chẳng những che chắn nắng nóng mà còn hoàn thiện cho phong cách hè của bạn.
+                                Những chiếc mũ rộng vành này là “vũ khí” bảo vệ cho cả mái tóc, làn da và là 1 món thời trang khơi gợi nét duyên dáng, yêu kiều của bạn. Ngoài kiểu mũ rộng vành dành cho mùa hè & biển năm nay, Chất liệu sử dụng phổ biến nhất cho các kiểu NÓN mùa hè đặc điểm nhẹ, thông thoáng.
                             </div>
                         </div>
                     </div>
@@ -100,7 +101,7 @@
                                 Ngày: 20-10-2019
                             </div>
                             <div class="news-item__desc">
-                                Những chiếc mũ rộng vành này là “vũ khí” bảo vệ cho cả mái tóc, làn da và là 1 món thời trang khơi gợi nét duyên dáng, yêu kiều của bạn. Ngoài kiểu mũ rộng vành dành cho mùa hè & biển năm nay, Chất liệu sử dụng phổ biến nhất cho các kiểu NÓN mùa hè đặc điểm nhẹ, thông thoáng. Bên cạnh đó, các loại vải mềm, thoáng cũng mang đến cảm giác thoải mái, chẳng những che chắn nắng nóng mà còn hoàn thiện cho phong cách hè của bạn.
+                                Những chiếc mũ rộng vành này là “vũ khí” bảo vệ cho cả mái tóc, làn da và là 1 món thời trang khơi gợi nét duyên dáng, yêu kiều của bạn. Ngoài kiểu mũ rộng vành dành cho mùa hè & biển năm nay, Chất liệu sử dụng phổ biến nhất cho các kiểu NÓN mùa hè đặc điểm nhẹ, thông thoáng.
                             </div>
                         </div>
                     </div>
@@ -116,7 +117,7 @@
                                 Ngày: 20-10-2019
                             </div>
                             <div class="news-item__desc">
-                                Những chiếc mũ rộng vành này là “vũ khí” bảo vệ cho cả mái tóc, làn da và là 1 món thời trang khơi gợi nét duyên dáng, yêu kiều của bạn. Ngoài kiểu mũ rộng vành dành cho mùa hè & biển năm nay, Chất liệu sử dụng phổ biến nhất cho các kiểu NÓN mùa hè đặc điểm nhẹ, thông thoáng. Bên cạnh đó, các loại vải mềm, thoáng cũng mang đến cảm giác thoải mái, chẳng những che chắn nắng nóng mà còn hoàn thiện cho phong cách hè của bạn.
+                                Những chiếc mũ rộng vành này là “vũ khí” bảo vệ cho cả mái tóc, làn da và là 1 món thời trang khơi gợi nét duyên dáng, yêu kiều của bạn. Ngoài kiểu mũ rộng vành dành cho mùa hè & biển năm nay, Chất liệu sử dụng phổ biến nhất cho các kiểu NÓN mùa hè đặc điểm nhẹ, thông thoáng.
                             </div>
                         </div>
                     </div>
@@ -127,14 +128,56 @@
                 </div>
                 <div id="videosList" class="videos-list__wrapper">
                     <div class="main-video__wrapper">
-                    <object data="https://www.youtube.com/embed/tgbNymZ7vqY"></object>
+                        <iframe src="https://www.youtube.com/embed/wF8ELKKTu_A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class="sub-videos__wrapper">
                         <div class="label__list">
-                            Video
+                            Video liên quan
+                        </div>
+                        <div id="videoSlider" class="prepare-videos__list">
+                            <div class="video__item">
+                                <iframe src="https://www.youtube.com/embed/wF8ELKKTu_A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="video__item">
+                                <iframe src="https://www.youtube.com/embed/wF8ELKKTu_A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <!-- <div class="video__item">
+                                <iframe src="https://www.youtube.com/embed/wF8ELKKTu_A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div> -->
                         </div>
                     </div>
                 </div>
+
+                <div class="label__list">
+                    Đối tác
+                </div>
+                <div id="coperations" class="coperations">
+                    <div class="cop__item">
+                        <img src="images/logo-dt-01.jpg" alt="Logo đối tác">
+                    </div>
+                    <div class="cop__item">
+                        <img src="images/logo-dt-01.jpg" alt="Logo đối tác">
+                    </div>
+                    <div class="cop__item">
+                        <img src="images/logo-dt-01.jpg" alt="Logo đối tác">
+                    </div>
+                    <div class="cop__item">
+                        <img src="images/logo-dt-01.jpg" alt="Logo đối tác">
+                    </div>
+                    <div class="cop__item">
+                        <img src="images/logo-dt-01.jpg" alt="Logo đối tác">
+                    </div>
+                    <div class="cop__item">
+                        <img src="images/logo-dt-01.jpg" alt="Logo đối tác">
+                    </div>                    
+                    <div class="cop__item">
+                        <img src="images/logo-dt-01.jpg" alt="Logo đối tác">
+                    </div>
+                    <div class="cop__item">
+                        <img src="images/logo-dt-01.jpg" alt="Logo đối tác">
+                    </div>
+                </div>
+
             </div>
             
         </div>
