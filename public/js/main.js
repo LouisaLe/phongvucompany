@@ -5,7 +5,8 @@ $(document).ready(function() {
         autoplaySpeed: 2000,
         slidesToShow: 1,
         infinite: true,
-        dots: true
+        dots: true,
+        fade: true
     });
 
     $('#productSlider').slick({

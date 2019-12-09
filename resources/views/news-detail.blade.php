@@ -26,16 +26,19 @@
             @include('common.menu')        
         </div>
         <div class="content__container">
-            <div class="product__wrapper right">
+
+            <div class="product--detail left">
+                <h1>Cách chọn mũ vành rộng duyên dáng và xinh đẹp</h1>
+            </div>
+
+            <div class="product__wrapper">
                 <div class="image__banner">
                     <img src="images/cap-04.png">
                 </div>
             </div>
-            <div class="product--detail left">
-                <h1>News title</h1>
-            </div>
+            
             <div class="product--detail description">
-                <p>New description</p>
+                <p>Những chiếc mũ rộng vành này là “vũ khí” bảo vệ cho cả mái tóc, làn da và là 1 món thời trang khơi gợi nét duyên dáng, yêu kiều của bạn. Ngoài kiểu mũ rộng vành dành cho mùa hè & biển năm nay, Chất liệu sử dụng phổ biến nhất cho các kiểu NÓN mùa hè đặc điểm nhẹ, thông thoáng</p>
             </div>
         </div>
         <!-- footer code -->
