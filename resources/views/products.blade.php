@@ -29,25 +29,75 @@
         
         <!-- main content -->
         <div class="main__wrapper">
-            <div class="content__container">
+            <div id="products" class="content__container">
                 <div id="listProducts" class="label__list">
                     Sản phẩm
                 </div>
-
-                <div id="productSlider" class="flex-block">
-                    @foreach($products as $product)
-                    <div class="list__item--two">
-                        <a class="list__item" href="{{url('product',$product->id)}}">
-                            <?php $image = getThumnailProduct($product->image); ?>
-                            <img src="{{url($product->getPathImage($image['name']))}}" alt="{{$product->name}}">
-                            <div class="label-on-card">                                
-                                <p class="text-shown">{{$product->name}}</p>
-                                <p class="text-shown">Test Number</p>
-                                <p class="text--hover">Tìm hiểu thêm</p>                                
+                <div class="product__list-name">Nón</div>
+                <div class="news-list__wrapper">
+                    <div class="news-item__wrapper">
+                        <div class="news-item__image">
+                            <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
+                        </div>
+                        <div class="news-item__cotent">
+                            <div class="news-item__title">
+                                Nón len
                             </div>
-                        </a>
+                            <div class="news-item__date">
+                               Mã sản phẩm
+                            </div>
+                            <div class="news-item__desc">
+                                Thông tin sản phẩm
+                                <ul>
+                                    <li>Màu sắc:</li>
+                                    <li>Kích cỡ/size: </li>
+                                    <li>Chất liệu: </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    @endforeach
+                    <div class="news-item__wrapper">
+                        <div class="news-item__image">
+                            <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
+                        </div>
+                        <div class="news-item__cotent">
+                            <div class="news-item__title">
+                                Nón lưỡi chai
+                            </div>
+                            <div class="news-item__date">
+                               Mã sản phẩm
+                            </div>
+                            <div class="news-item__desc">
+                                Thông tin sản phẩm
+                                <ul>
+                                    <li>Màu sắc:</li>
+                                    <li>Kích cỡ/size: </li>
+                                    <li>Chất liệu: </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item__wrapper">
+                        <div class="news-item__image">
+                            <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
+                        </div>
+                        <div class="news-item__cotent">
+                            <div class="news-item__title">
+                                Nón Vành Rộng
+                            </div>
+                            <div class="news-item__date">
+                               Mã sản phẩm
+                            </div>
+                            <div class="news-item__desc">
+                                Thông tin sản phẩm
+                                <ul>
+                                    <li>Màu sắc:</li>
+                                    <li>Kích cỡ/size: </li>
+                                    <li>Chất liệu: </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

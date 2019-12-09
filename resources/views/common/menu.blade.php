@@ -1,3 +1,8 @@
+<div id="nav-icon">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
 <div class="nav-bar__container">
     <ul class="nav-bar__wrapper">
         <li class="nav-bar__item">

@@ -11,16 +11,17 @@
             </div>
             <div class="footer__item">
                 <p class="title">Kết nối với chúng tôi</p>
-                <span>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FfacebookappVietnam%2F%3Feid%3DARBI79I9iMhY-T01YbDqKV1LnyHFXsFZiXyOCMWc12k96KkWbzBTYaOBoMEUMHiK8mu6pRpiV7TKv4Dw%26brand_redir%3D20531316728&tabs=timeline&width=300px&height=200px&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300px" height="200px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                <!-- <span>
                     <a href="https://www.facebook.com/" target="_blank">
                         <img src="images/ico-fb.png" alt="Facebook">
                     </a>
-                </span>
-                <span>
+                </span> -->
+                <!-- <span>
                     <a href="#" target="_blank">
                         <img src="images/ico-skype.png" alt="Skype">
                     </a>
-                </span>
+                </span> -->
             </div>
             <div class="footer__item">
                 <p class="title">Liên Hệ</p>

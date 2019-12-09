@@ -10,7 +10,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="../css/app.css" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
         
         <!-- Styles -->
     </head>
@@ -18,7 +18,7 @@
         <div class="header__wrapper">
             <div class="logo">
                 <a href="#">
-                    <img src="../images/logo-phong-vu.png" alt="Phong Vu Company - Fashion for all">
+                    <img src="images/logo-phong-vu.png" alt="Phong Vu Company - Fashion for all">
                 </a>
                 <p class="slogan">Fashion for all</p>
             </div>
@@ -28,17 +28,14 @@
         <div class="content__container">
             <div class="product__wrapper right">
                 <div class="image__banner">
-                    <?php $images = getProductImages($product->image);?>
-                    @foreach($images as $image)
-                        <img src="{{url($product->getPathImage($image['name']))}}" alt="{{$product->name}}">
-                    @endforeach
+                    <img src="images/cap-04.png">
                 </div>
             </div>
             <div class="product--detail left">
-                <h1>{{$product->name}}</h1>
+                <h1>News title</h1>
             </div>
             <div class="product--detail description">
-                <p>{{$product->description}}</p>
+                <p>New description</p>
             </div>
         </div>
         <!-- footer code -->
@@ -49,7 +46,7 @@
                     <div class="footer__item">
                         <div class="logo">
                             <a href="{{url('/')}}">
-                                <img src="../images/logo-phong-vu.png" alt="Phong Vu Company - Fashion for all">
+                                <img src="images/logo-phong-vu.png" alt="Phong Vu Company - Fashion for all">
                             </a>
                         </div>
                     </div>
@@ -57,12 +54,12 @@
                         <p class="title">Kết nối với chúng tôi</p>
                         <span>
                             <a href="https://www.facebook.com/" target="_blank">
-                                <img src="../images/ico-fb.png" alt="Facebook">
+                                <img src="images/ico-fb.png" alt="Facebook">
                             </a>
                         </span>
                         <span>
                             <a href="#" target="_blank">
-                                <img src="../images/ico-skype.png" alt="Skype">
+                                <img src="images/ico-skype.png" alt="Skype">
                             </a>
                         </span>
                     </div>
@@ -82,9 +79,9 @@
         </div>
 
         <div id="scrollTop" class="button__scroll-top">
-            <img src="../images/arrow-top.png" alt="Go to top">
+            <img src="images/arrow-top.png" alt="Go to top">
         </div>
-        <script src="../js/main.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
 

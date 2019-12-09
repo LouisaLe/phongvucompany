@@ -13,17 +13,29 @@ $(document).ready(function() {
         autoplaySpeed: 2000,
         slidesToShow: 3,
         infinite: true,
-        dots: true
+        dots: true,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
     });
 
-    if ($('#videoSlider').children().length > 3) {
+    if ($('#videoSlider').children().length > 1) {
         $('#videoSlider').slick({
             autoplay: true,
             autoplaySpeed: 2000,
             slidesToShow: 3,
             slidesToScroll: 1,
             infinite: true,
-            dots: true
+            dots: true,
+            responsive: [{
+                breakpoint: 668,
+                settings: {
+                    slidesToShow: 1
+                }
+            }]
         });
     }
 
@@ -34,13 +46,19 @@ $(document).ready(function() {
             slidesToShow: 6,
             slidesToScroll: 1,
             infinite: true,
-            dots: false
+            dots: false,
+            responsive: [{
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 3
+                }
+            }]
         });
     }
 
-
-
-
+    $('#nav-icon').click(function() {
+        $(this).toggleClass('open');
+    });
 
     $('#scrollTop').click(function() {
         $("html, body").animate({ scrollTop: 0 }, 800);

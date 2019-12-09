@@ -30,6 +30,9 @@ Route::get('/policy', function () {
 Route::get('/products', function () {
     return view('products');
 });
+Route::get('/news-detail', function () {
+    return view('news-detail');
+});
 
 Route::group([
     'prefix' => 'admin',

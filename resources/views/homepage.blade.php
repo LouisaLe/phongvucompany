@@ -73,7 +73,7 @@
                     Tin tức, sự kiện
                 </div>
                 <div id="newsList" class="news-list__wrapper">
-                    <div class="news-item__wrapper">
+                    <a href="{{'news-detail'}}" class="news-item__wrapper">
                         <div class="news-item__image">
                             <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
                         </div>
@@ -88,7 +88,7 @@
                                 Những chiếc mũ rộng vành này là “vũ khí” bảo vệ cho cả mái tóc, làn da và là 1 món thời trang khơi gợi nét duyên dáng, yêu kiều của bạn. Ngoài kiểu mũ rộng vành dành cho mùa hè & biển năm nay, Chất liệu sử dụng phổ biến nhất cho các kiểu NÓN mùa hè đặc điểm nhẹ, thông thoáng.
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <div class="news-item__wrapper">
                         <div class="news-item__image">
                             <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
