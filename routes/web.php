@@ -34,6 +34,10 @@ Route::get('/news-detail', function () {
     return view('news-detail');
 });
 
+Route::get('/news-list', function () {
+    return view('news-list');
+});
+
 Route::group([
     'prefix' => 'admin',
     'namespace' => 'Admin',

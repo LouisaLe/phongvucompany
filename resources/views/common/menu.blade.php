@@ -23,7 +23,7 @@
         </li>
         
         <li class="nav-bar__item">
-            <a href="{{url('policy')}}">Tin tức</a>
+            <a href="{{url('news-list')}}">Tin tức</a>
         </li>
         <li class="nav-bar__item">
             <a href="{{url('policy')}}">Chính sách</a>

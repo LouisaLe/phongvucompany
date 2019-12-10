@@ -9484,10 +9484,12 @@ ul.circle-index li {
 }
 
 .product--detail h1 {
+    padding-bottom: 15px;
     text-align: center;
 }
 
-#products {
+#products,
+#newslist {
     margin-top: 40px;
 }
 
@@ -9500,6 +9502,36 @@ ul.circle-index li {
 
 .mobile__logo {
     display: none;
+}
+
+
+/* Pagination */
+
+.paging__wrapper {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: #fff;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border-radius: 5px;
 }
 
 

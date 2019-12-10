@@ -17,16 +17,7 @@
         <!-- Styles -->
     </head>
     <body>
-        <div class="header__wrapper">
-            <div class="logo">
-                <a href="#">
-                    <img src="images/logo-phong-vu.png" alt="Phong Vu Company - Fashion for all">
-                </a>
-            </div>
-            <p class="slogan">Fashion for all</p>
-            @include('common.menu')        
-        </div>
-        
+        @include('common.nav-header')
         <!-- main content -->
         <div class="main__wrapper">
             <div id="products" class="content__container">
