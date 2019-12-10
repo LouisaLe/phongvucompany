@@ -14,6 +14,17 @@
         <li id="productListdID" class="nav-bar__item">
             <a href="{{url('products')}}">Sản phẩm</a>
         </li>
+        <li class="nav-bar__item logo-item">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo-copy.png" alt="Phong Vu Company - Fashion for all">
+                </a>
+            </div>
+        </li>
+        
+        <li class="nav-bar__item">
+            <a href="{{url('policy')}}">Tin tức</a>
+        </li>
         <li class="nav-bar__item">
             <a href="{{url('policy')}}">Chính sách</a>
         </li>

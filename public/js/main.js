@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    setInterval(function() {
+        $('.circle').toggleClass('open');
+    }, 1000);
+
     $('#bannerSlider').slick({
         autoplay: true,
         autoplaySpeed: 2000,

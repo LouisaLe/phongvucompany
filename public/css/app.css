@@ -8791,12 +8791,17 @@ a.text-dark:hover {
 /* @import 'menu.css'
   */
 
+@font-face {
+    font-family: 'UtmAvo';
+    src: url('../access/fonts/UTM\ Avo.ttf') format('truetype')
+}
+
 html,
 body {
     /* background-color: #a6a6a6; */
     /* font-family: "Times New Roman", Times, serif;
      */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "UtmAvo", Arial, Helvetica, sans-serif;
     font-size: 16px;
     /* background-image: url('../images/bg-01.png'); */
     background-image: url('../images/bg-01.jpg');
@@ -8821,7 +8826,8 @@ p {
 
 .nav-bar__container {
     position: relative;
-    width: 80%;
+    /* logo-change */
+    width: 95%;
     max-width: 1200px;
     margin: 0 auto;
     /* top: 50%;
@@ -8832,18 +8838,41 @@ p {
 }
 
 .nav-bar__wrapper {
-    display: flex;
+    /* logo-change */
+    /* display: flex; */
     justify-content: center;
     /* background-image: linear-gradient(to right, #660000, #cc0000); */
     /* color: #ffffff; */
     color: #660000;
     font-size: 16px;
     text-transform: uppercase;
+    display: block;
 }
 
 .nav-bar__item {
     padding: 10px 15px;
     cursor: pointer;
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+}
+
+.nav-bar__item.logo-item::after,
+.nav-bar__item.logo-item::before {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 1px;
+    background-color: red;
+    bottom: 15px;
+}
+
+.nav-bar__item.logo-item::after {
+    right: 1px;
+}
+
+.nav-bar__item.logo-item::before {
+    left: 1px;
 }
 
 .nav-bar__item a {
@@ -8860,7 +8889,8 @@ p {
 
 .logo {
     text-align: center;
-    margin-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
     /* -webkit-box-shadow: 0px 0px 5px 0px rgba(235, 230, 235, 1);
     -moz-box-shadow: 0px 0px 5px 0px rgba(235, 230, 235, 1);
     box-shadow: 0px 0px 5px 0px rgba(235, 230, 235, 1); */
@@ -8929,11 +8959,12 @@ p {
 
 .header__wrapper {
     position: relative;
-    padding: 20px 20px 40px 20px;
+    padding: 3px 0 8px 0;
     /* padding: 0 50px; */
     /* background-image: linear-gradient(to right, #660000, #cc0000); */
-    background-color: #ffffff;
-    color: #660000;
+    background-color: rgb(255, 255, 255, 1);
+    /* color: #660000; */
+    text-align: center;
 }
 
 .top-menu {
@@ -8998,7 +9029,7 @@ p {
 }
 
 .news-item__date {
-    font-size: 14px;
+    font-size: 12px;
     font-style: italic;
 }
 
@@ -9157,20 +9188,22 @@ p {
 
 .footer__wrapper .content__container {
     width: 100%;
-    background-color: #ffffff;
-    color: #d31820;
+    background-color: #f8f9fa2b;
+    color: #ffffff;
     margin-bottom: 0;
 }
 
 .footer__content {
     display: flex;
     justify-content: center;
-    border-top: 1.2px solid #cccccc;
-    padding: 20px;
+    padding: 20px 0;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .footer__item {
     margin-right: 40px;
+    font-size: 14px;
 }
 
 .footer__item a {
@@ -9183,6 +9216,11 @@ p {
     background-color: initial;
     box-shadow: initial;
     top: 25px;
+}
+
+ul.circle-index,
+ul.circle-index li {
+    list-style-type: disc;
 }
 
 .copy-right {
@@ -9460,6 +9498,10 @@ p {
     margin-bottom: 20px;
 }
 
+.mobile__logo {
+    display: none;
+}
+
 
 /* Responsive */
 
@@ -9490,6 +9532,25 @@ p {
     }
     #contactForm {
         margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #nav-icon {
+        display: block;
+    }
+    .nav-bar__wrapper {
+        display: none;
+    }
+    #nav-icon.open+.nav-bar__container .nav-bar__wrapper {
+        display: block;
+    }
+    .mobile__logo {
+        display: block;
+        padding: 15px 0;
+    }
+    .nav-bar__item.logo-item {
+        display: none;
     }
 }
 
@@ -9545,17 +9606,71 @@ p {
         transform: initial;
         margin-bottom: 30px;
     }
-    #nav-icon {
-        display: block;
-    }
-    .nav-bar__wrapper {
-        display: none;
-    }
-    #nav-icon.open+.nav-bar__container .nav-bar__wrapper {
-        display: block;
-    }
     .image__banner img {
         max-width: initial;
         width: 100%;
     }
+}
+
+
+/* Amination */
+
+.circle {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: ease-in-out;
+    text-align: center;
+    background: transparent;
+    border: 1px solid #d31820;
+    color: white;
+    border-radius: 100%;
+    padding: 20px;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.circle.open {
+    width: 100%;
+    height: 100%;
+}
+
+.circle2.open {
+    width: 80%;
+    height: 80%;
+}
+
+.phone-call__wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.phone-call__border {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-call__border .img-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.img-icon img {
+    width: 100%;
+    height: 100%;
 }
