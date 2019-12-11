@@ -14,7 +14,7 @@ $(document).ready(function() {
     });
 
     $('#productSlider').slick({
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         slidesToShow: 3,
         infinite: true,
@@ -86,6 +86,24 @@ $(document).ready(function() {
         } else {
             $('.bounce').addClass('hidden');
             $('#scrollTop').removeClass('hidden');
+        }
+    });
+
+    $('#filterProducts li').click(function(e) {
+        var el = $(this);
+        if (!el.hasClass('active')) {
+            $('#filterProducts').children().removeClass('active');
+            $('section').removeClass('active');
+            el.addClass('active');
+            $('#list__' + el.attr('id')).addClass('active');
+        }
+    });
+
+    $('.phone-call__wrapper').click(function(e) {
+        var el = $(this);
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            e.preventDefault();
+            $('.phone__number').toggleClass('open');
         }
     });
 

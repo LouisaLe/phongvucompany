@@ -9019,6 +9019,11 @@ p {
 
 .news-item__cotent {
     padding-left: 15px;
+    cursor: pointer;
+}
+
+.news-item__cotent:hover {
+    color: rgb(255, 255, 255, 0.8);
 }
 
 .news-item__title {
@@ -9153,21 +9158,25 @@ p {
 
 .label-on-card {
     position: absolute;
-    top: 50%;
+    bottom: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px solid #ffffff;
+    transform: translate(-50%, 0);
+    border: 1px solid #ffffff;
     font-size: 16px;
     color: #ffffff;
-    width: 80%;
+    width: 100%;
     text-align: center;
-    padding: 20px;
-    background-color: rgb(242, 242, 242, 0.5);
+    padding: 5px 0;
+    background-color: rgb(242, 242, 242, 0.25);
     text-transform: uppercase;
 }
 
 .label-on-card .text--hover {
     display: none;
+}
+
+.label-on-card .text-shown {
+    display: inline-block;
 }
 
 .label-on-card:hover .text-shown {
@@ -9181,6 +9190,23 @@ p {
 .contact-form {
     max-width: 500px;
     padding-right: 25px;
+}
+
+.phone__number {
+    display: none;
+}
+
+.phone__number.open {
+    display: block;
+    position: absolute;
+    padding: 10px 20px;
+    background: rgb(255, 255, 255, 1);
+    border: 1px solid #000000;
+    color: #d31820;
+    width: 230px;
+    right: 100%;
+    top: 50%;
+    font-weight: 700;
 }
 
 
@@ -9488,6 +9514,10 @@ ul.circle-index li {
     text-align: center;
 }
 
+#productDetail {
+    margin-top: 40px;
+}
+
 #products,
 #newslist {
     margin-top: 40px;
@@ -9532,6 +9562,30 @@ ul.circle-index li {
     background-color: rgb(255, 255, 255);
     color: #000000;
     border-radius: 5px;
+}
+
+.goods__list ul {
+    display: flex;
+    justify-content: center;
+}
+
+.goods__list li {
+    padding: 10px 25px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.goods__list li.active {
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+section {
+    display: none;
+}
+
+section.active {
+    display: block;
 }
 
 

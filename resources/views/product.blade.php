@@ -16,22 +16,25 @@
     </head>
     <body>
         @include('common.nav-header')
-        <div class="content__container">
-            <div class="product__wrapper right">
-                <div class="image__banner">
-                    <?php $images = getProductImages($product->image);?>
-                    @foreach($images as $image)
-                        <img src="{{url($product->getPathImage($image['name']))}}" alt="{{$product->name}}">
-                    @endforeach
+        <div class="main__wrapper">
+            <div id="productDetail" class="content__container">
+                <div class="product__wrapper right">
+                    <div class="image__banner">
+                        <?php $images = getProductImages($product->image);?>
+                        @foreach($images as $image)
+                            <img src="{{url($product->getPathImage($image['name']))}}" alt="{{$product->name}}">
+                        @endforeach
+                    </div>
+                </div>
+                <div class="product--detail left">
+                    <h1>{{$product->name}}</h1>
+                </div>
+                <div class="product--detail description">
+                    <p>{{$product->description}}</p>
                 </div>
             </div>
-            <div class="product--detail left">
-                <h1>{{$product->name}}</h1>
-            </div>
-            <div class="product--detail description">
-                <p>{{$product->description}}</p>
-            </div>
         </div>
+        
         <!-- footer code -->
 
         @include('common.footer')

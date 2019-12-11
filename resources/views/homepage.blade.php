@@ -63,11 +63,12 @@
                             <?php $image = getThumnailProduct($product->image); ?>
                             <img src="{{url($product->getPathImage($image['name']))}}" alt="{{$product->name}}">
                             <div class="label-on-card">                                
-                                <p class="text-shown">{{$product->name}}</p>
+                                <p class="text-shown">{{$product->name}} - </p>
                                 <p class="text-shown">Test Number</p>
                                 <p class="text--hover">Tìm hiểu thêm</p>                                
                             </div>
                         </a>
+                        
                     </div>
                     @endforeach
                 </div>
@@ -151,12 +152,12 @@
                             Video liên quan
                         </div>
                         <div id="videoSlider" class="prepare-videos__list">
-                            <div class="video__item">
+                            <a href="https://www.youtube.com/embed/wF8ELKKTu_A" class="video__item">
                                 <iframe src="https://www.youtube.com/embed/wF8ELKKTu_A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <div class="video__item">
+                            </a>
+                            <a href="https://www.youtube.com/embed/wF8ELKKTu_A" class="video__item">
                                 <iframe src="https://www.youtube.com/embed/wF8ELKKTu_A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
+                            </a>
                             <!-- <div class="video__item">
                                 <iframe src="https://www.youtube.com/embed/wF8ELKKTu_A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div> -->

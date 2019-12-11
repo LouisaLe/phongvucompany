@@ -24,72 +24,219 @@
                 <div id="listProducts" class="label__list">
                     Sản phẩm
                 </div>
-                <div class="product__list-name">Nón</div>
-                <div class="news-list__wrapper">
-                    <div class="news-item__wrapper">
-                        <div class="news-item__image">
-                            <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
-                        </div>
-                        <div class="news-item__cotent">
-                            <div class="news-item__title">
-                                Nón len
-                            </div>
-                            <div class="news-item__date">
-                               Mã sản phẩm
-                            </div>
-                            <div class="news-item__desc">
-                                Thông tin sản phẩm
-                                <ul>
-                                    <li>Màu sắc:</li>
-                                    <li>Kích cỡ/size: </li>
-                                    <li>Chất liệu: </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-item__wrapper">
-                        <div class="news-item__image">
-                            <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
-                        </div>
-                        <div class="news-item__cotent">
-                            <div class="news-item__title">
-                                Nón lưỡi chai
-                            </div>
-                            <div class="news-item__date">
-                               Mã sản phẩm
-                            </div>
-                            <div class="news-item__desc">
-                                Thông tin sản phẩm
-                                <ul>
-                                    <li>Màu sắc:</li>
-                                    <li>Kích cỡ/size: </li>
-                                    <li>Chất liệu: </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-item__wrapper">
-                        <div class="news-item__image">
-                            <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
-                        </div>
-                        <div class="news-item__cotent">
-                            <div class="news-item__title">
-                                Nón Vành Rộng
-                            </div>
-                            <div class="news-item__date">
-                               Mã sản phẩm
-                            </div>
-                            <div class="news-item__desc">
-                                Thông tin sản phẩm
-                                <ul>
-                                    <li>Màu sắc:</li>
-                                    <li>Kích cỡ/size: </li>
-                                    <li>Chất liệu: </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div class="goods__list">
+                    <ul id="filterProducts">
+                        <li id="pro1" class="active">Nón</li>
+                        <li id="pro2">Quần áo</li>
+                        <li id="pro3">Giày dép</li>
+                    </ul>
                 </div>
+                <section id="list__pro1" class="active">
+                    <div class="product__list-name">Nón</div>
+                    <div class="news-list__wrapper">
+                        <div class="news-item__wrapper">
+                            <div class="news-item__image">
+                                <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
+                            </div>
+                            <div class="news-item__cotent">
+                                <div class="news-item__title">
+                                    Nón len
+                                </div>
+                                <div class="news-item__date">
+                                Mã sản phẩm
+                                </div>
+                                <div class="news-item__desc">
+                                    Thông tin sản phẩm
+                                    <ul>
+                                        <li>Màu sắc:</li>
+                                        <li>Kích cỡ/size: </li>
+                                        <li>Chất liệu: </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-item__wrapper">
+                            <div class="news-item__image">
+                                <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
+                            </div>
+                            <div class="news-item__cotent">
+                                <div class="news-item__title">
+                                    Nón lưỡi chai
+                                </div>
+                                <div class="news-item__date">
+                                Mã sản phẩm
+                                </div>
+                                <div class="news-item__desc">
+                                    Thông tin sản phẩm
+                                    <ul>
+                                        <li>Màu sắc:</li>
+                                        <li>Kích cỡ/size: </li>
+                                        <li>Chất liệu: </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-item__wrapper">
+                            <div class="news-item__image">
+                                <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
+                            </div>
+                            <div class="news-item__cotent">
+                                <div class="news-item__title">
+                                    Nón Vành Rộng
+                                </div>
+                                <div class="news-item__date">
+                                Mã sản phẩm
+                                </div>
+                                <div class="news-item__desc">
+                                    Thông tin sản phẩm
+                                    <ul>
+                                        <li>Màu sắc:</li>
+                                        <li>Kích cỡ/size: </li>
+                                        <li>Chất liệu: </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="list__pro2">
+                    <div class="product__list-name">Quần áo</div>
+                    <div class="news-list__wrapper">
+                        <div class="news-item__wrapper">
+                            <div class="news-item__image">
+                                <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
+                            </div>
+                            <div class="news-item__cotent">
+                                <div class="news-item__title">
+                                    Đầm dạ hội
+                                </div>
+                                <div class="news-item__date">
+                                Mã sản phẩm
+                                </div>
+                                <div class="news-item__desc">
+                                    Thông tin sản phẩm
+                                    <ul>
+                                        <li>Màu sắc:</li>
+                                        <li>Kích cỡ/size: </li>
+                                        <li>Chất liệu: </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-item__wrapper">
+                            <div class="news-item__image">
+                                <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
+                            </div>
+                            <div class="news-item__cotent">
+                                <div class="news-item__title">
+                                    Đầm ngủ
+                                </div>
+                                <div class="news-item__date">
+                                Mã sản phẩm
+                                </div>
+                                <div class="news-item__desc">
+                                    Thông tin sản phẩm
+                                    <ul>
+                                        <li>Màu sắc:</li>
+                                        <li>Kích cỡ/size: </li>
+                                        <li>Chất liệu: </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-item__wrapper">
+                            <div class="news-item__image">
+                                <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
+                            </div>
+                            <div class="news-item__cotent">
+                                <div class="news-item__title">
+                                    Đầm ngắn
+                                </div>
+                                <div class="news-item__date">
+                                Mã sản phẩm
+                                </div>
+                                <div class="news-item__desc">
+                                    Thông tin sản phẩm
+                                    <ul>
+                                        <li>Màu sắc:</li>
+                                        <li>Kích cỡ/size: </li>
+                                        <li>Chất liệu: </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="list__pro3">
+                    <div class="product__list-name">Giày dép</div>
+                    <div class="news-list__wrapper">
+                        <div class="news-item__wrapper">
+                            <div class="news-item__image">
+                                <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
+                            </div>
+                            <div class="news-item__cotent">
+                                <div class="news-item__title">
+                                    Giày cao gót
+                                </div>
+                                <div class="news-item__date">
+                                Mã sản phẩm
+                                </div>
+                                <div class="news-item__desc">
+                                    Thông tin sản phẩm
+                                    <ul>
+                                        <li>Màu sắc:</li>
+                                        <li>Kích cỡ/size: </li>
+                                        <li>Chất liệu: </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-item__wrapper">
+                            <div class="news-item__image">
+                                <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
+                            </div>
+                            <div class="news-item__cotent">
+                                <div class="news-item__title">
+                                    Giày sandal
+                                </div>
+                                <div class="news-item__date">
+                                Mã sản phẩm
+                                </div>
+                                <div class="news-item__desc">
+                                    Thông tin sản phẩm
+                                    <ul>
+                                        <li>Màu sắc:</li>
+                                        <li>Kích cỡ/size: </li>
+                                        <li>Chất liệu: </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news-item__wrapper">
+                            <div class="news-item__image">
+                                <img src="images/cap-04.png" alt="Phong Vu Company - Fashion for all">                            
+                            </div>
+                            <div class="news-item__cotent">
+                                <div class="news-item__title">
+                                    Dép lê
+                                </div>
+                                <div class="news-item__date">
+                                Mã sản phẩm
+                                </div>
+                                <div class="news-item__desc">
+                                    Thông tin sản phẩm
+                                    <ul>
+                                        <li>Màu sắc:</li>
+                                        <li>Kích cỡ/size: </li>
+                                        <li>Chất liệu: </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
 
