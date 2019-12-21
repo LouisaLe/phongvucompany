@@ -36,6 +36,31 @@
                                         <span class="text-danger"><p>{{ $errors->first('name') }}</p></span>
                                     </div>
                                 </div>
+
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12 mg-top-20">
+                                    <div class="col-md-3 col-sm-6 col-xs-12 ">
+                                        <label for="exampleInputEmail1">Mã sản phẩm<span class="obligatory">*</span></label>
+                                    </div>
+                                    <div class=" form-group  col-md-6 col-sm-6 col-xs-12 @if($errors->first('sku')) has-error @endif">
+                                        <input type="text" name="sku" class="form-control"  placeholder="" maxlength="255" value="{{ old('sku')}}">
+                                        <span class="text-danger"><p>{{ $errors->first('sku') }}</p></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <div class="col-md-3 col-sm-6 col-xs-12 ">
+                                        <label for="exampleInputEmail1">Loại Sản Phẩm</label>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 @if($errors->first('category_id')) has-error @endif">
+                                        <select name="category_id" id="category_id"   class="form-control" style="width: 100%;" tabindex="-1" aria-hidden="true">
+                                            <option @if($dataProducts->category_id == 1 ) selected ="selected" @endif value="1" >Nón</option>
+                                            <option @if($dataProducts->category_id == 2 ) selected ="selected" @endif value="2" >Quần Áo</option>
+                                            <option @if($dataProducts->category_id == 3 ) selected ="selected" @endif value="2" >Giày Dép</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
                                 <div class="form-group col-md-12 col-sm-12 col-xs-12 mg-top-20">
                                     <div class="col-md-3 col-sm-6 col-xs-12 ">
                                         <label for="video_url">Link Video<span class="obligatory"></span></label>
@@ -125,6 +150,9 @@
                                     </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 ">
                                         <textarea id="summary" name="summary" rows="10" cols="80">{!! old('summary',isset($dataProducts)?$dataProducts->summary:NULL) !!}</textarea>
+                                        <script>
+                                            ckeditor(summary);
+                                        </script>
                                     </div>
                                 </div>
                                 <div class="form-group col-md-12 col-sm-12 col-xs-12">
@@ -133,6 +161,9 @@
                                     </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 ">
                                         <textarea id="short_description" name="short_description" rows="10" cols="80">{!! old('short_description',isset($dataProducts)?$dataProducts->short_description:NULL) !!}</textarea>
+                                        <script>
+                                            ckeditor(short_description);
+                                        </script>
                                     </div>
                                 </div>
                                 <div class="form-group col-md-12 col-sm-12 col-xs-12">
@@ -141,6 +172,9 @@
                                     </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 ">
                                         <textarea id="description" name="description" rows="10" cols="80">{!! old('description',isset($dataProducts)?$dataProducts->description:NULL) !!}</textarea>
+                                        <script>
+                                            ckeditor(description);
+                                        </script>
                                     </div>
                                 </div>
 

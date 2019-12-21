@@ -70,6 +70,8 @@ class ProductsController extends Controller
             $products->video_url         =  $request->video_url;
             $products->keywords          =  $request->keywords;
             $products->meta_description  =  $request->meta_description;
+            $products->category_id  =  $request->category_id;
+            $products->sku  =  $request->sku;
 
 			$products->save();
             //$products->saveDataByLang();
@@ -150,6 +152,8 @@ class ProductsController extends Controller
             $products->video_url         =  $request->video_url;
             $products->keywords          =  $request->keywords;
             $products->meta_description  =  $request->meta_description;
+            $products->category_id  =  $request->category_id;
+            $products->sku  =  $request->sku;
             $products->save();
             //$products->saveDataByLang();
 

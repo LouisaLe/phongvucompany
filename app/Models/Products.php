@@ -22,22 +22,30 @@ class Products extends Model
     	'keywords',
     	'meta_description',
     	'status',
+        'category_id',
+        'sku'
     ];
-
-    protected $attributeMultiplang = [
-        'name',
-        'summary',
-        'short_description',
-        'description',
-        'keywords',
-        'meta_description'
-    ];
+    
 
     /**
      * @return mixed
      */
     public function getProducts(){
         return self::all();
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getListHomePage(){
+        return self::where("status","=", 1)->get();
+    }
+
+    public function getListProductByCate($cateId = false){
+        if($cateId){
+            return self::where("category_id","=", $cateId)->get();
+        }
+        return $this->getProducts();
     }
 
     /**

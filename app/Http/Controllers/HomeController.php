@@ -20,7 +20,7 @@ class HomeController extends Controller
      * @return mixed
      */
     public function index() {
-        $products = $this->product->getProducts();
+        $products = $this->product->getListHomePage();
         return view('homepage', compact('products'));
     }
     

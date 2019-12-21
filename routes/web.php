@@ -27,9 +27,9 @@ Route::get('/policy', function () {
     return view('policy');
 });
 
-Route::get('/products', function () {
-    return view('products');
-});
+Route::get('/products/{cateId}',['as'=>'product-list', 'uses'=>'ProductListController@index'])->name('product-list');
+Route::get('/products',['as'=>'product-list', 'uses'=>'ProductListController@all'])->name('product-list');
+
 Route::get('/news-detail', function () {
     return view('news-detail');
 });
